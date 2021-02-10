@@ -1,0 +1,41 @@
+<header><div class="header-wrapper"><div class="inner-wrapper">
+  <nav id="navBar" class="no-js nav-bar">
+
+    <a class="nav-logo" href="/">
+      <img class='logo' src='/images/logo.svg' width="200px" height="100px"></a>
+      <div class="nav-right ">
+        <div class="nav-links">
+            <ul>
+                <li><a href="/docs/upload">Upload Data</a></li>
+                <li><a href="/docs/contribute">Contibute Space</a></li>
+            </ul>
+          </div>
+        </div>
+
+    <div id='nav-toggle' class="burgermenu" href="#">☰</div>
+
+    <div id='overlay'></div>
+    <div id="burgernav">
+      <ul>
+        <li><a href="/docs/upload">Upload Data</a></li>
+        <li><a href="/docs/contribute">Contibute Space</a></li>
+      </ul>
+    </div>
+</nav>
+<script>
+  // set the values here and use them in the graphic.
+  window.onload = () => {
+    let used = 50
+    let total = 50
+  console.log(new window.LoadVis({
+    target: document.querySelector("#graphicHolder"),
+    props: {
+      used
+      ,
+      total
+    }
+  }))
+  }
+</script>
+
+</div></div></header>
