@@ -1,6 +1,88 @@
-<!doctype html><html><head><meta name=generator content="Hugo 0.80.0"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta charset=utf-8><meta name=description content="Meet Arken, A Distributed Digital Archive Built for the World's Open Source and Scientific Data."><link rel=apple-touch-icon sizes=57x57 href=/images/apple-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/images/apple-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/images/apple-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/images/apple-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/images/apple-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/images/apple-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/images/apple-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/images/apple-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-icon-180x180.png><link rel=icon type=image/png sizes=192x192 href=/images/android-icon-192x192.png><link rel=icon type=image/png sizes=32x32 href=/images/favicon-32x32.png><link rel=icon type=image/png sizes=96x96 href=/images/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=/images/favicon-16x16.png><link rel=manifest href=/images/manifest.json><meta name=msapplication-TileColor content="#ffffff"><meta name=msapplication-TileImage content="/ms-icon-144x144.png"><meta name=theme-color content="#ffffff"><link rel=stylesheet type=text/css href=css/fonts/nitti.css><link rel=stylesheet type=text/css href=css/fonts/ibmplexmono.css><link rel=stylesheet type=text/css href=css/fonts/ibmplexsans.css><link rel=stylesheet href=graphic/public/global.css><link rel=stylesheet href=graphic/public/build/bundle.css><link rel=stylesheet type=text/css href=css/style.css><style type=text/css>.no-fouc{display:none}</style><script defer src=graphic/public/build/bundle.js></script><script defer type=text/javascript>document.documentElement.className='no-fouc';</script></head><body class=landing><header><div class=header-wrapper><div class=inner-wrapper><nav id=navBar class="no-js nav-bar"><a class=nav-logo href=/><img class=logo src=/images/logo.svg width=200px height=100px></a><div class=nav-right><div class=nav-links><ul><li><a href=/docs/upload>Upload Data</a></li><li><a href=/docs/contribute>Contibute Space</a></li></ul></div></div><div id=nav-toggle class=burgermenu href=#>☰</div><div id=overlay></div><div id=burgernav><ul><li><a href=/docs/upload>Upload Data</a></li><li><a href=/docs/contribute>Contibute Space</a></li></ul></div></nav><script>window.onload=()=>{let used=50
-let total=50
-console.log(new window.LoadVis({target:document.querySelector("#graphicHolder"),props:{used,total}}))}</script></div></div></header><div id=content></div></div></header><div class=wrapper><section class=light><div class=section-wrapper><div class=columns><div><h3>Meet Arken, A Distributed Digital Archive Built for the World's Open Source and Scientific Data.</h3></div><div><div id=graphicHolder></div><br><ul id=guide><li><b>Used Space:</b> 50 TB</li><li><b>Total Space:</b> 50 TB</li><li><b>Active Nodes:</b> 500</li><hr><li><b>Gitub:</b> <a href=https://github.com/arkenproject/arken>arkenproject/arken</a></li><hr><li><b>Dockerhub:</b> <a href=https://hub.docker.com/r/arkenproject/arken>arkenproject/arken</a></li></ul></div></div></div></section><section id=about class=default><div class=section-wrapper><div class=columns><div><h2>A bit of Backstory</h2><p>Many researchers, museums, and archivists are struggling to host and
+<!doctype html><html><head>
+<meta name=generator content="Hugo 0.86.0">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta charset=utf-8>
+<meta name=description content="Meet Arken, A Distributed Digital Archive Built for the World's Open Source and Scientific Data.">
+<link rel=apple-touch-icon sizes=57x57 href=/images/apple-icon-57x57.png>
+<link rel=apple-touch-icon sizes=60x60 href=/images/apple-icon-60x60.png>
+<link rel=apple-touch-icon sizes=72x72 href=/images/apple-icon-72x72.png>
+<link rel=apple-touch-icon sizes=76x76 href=/images/apple-icon-76x76.png>
+<link rel=apple-touch-icon sizes=114x114 href=/images/apple-icon-114x114.png>
+<link rel=apple-touch-icon sizes=120x120 href=/images/apple-icon-120x120.png>
+<link rel=apple-touch-icon sizes=144x144 href=/images/apple-icon-144x144.png>
+<link rel=apple-touch-icon sizes=152x152 href=/images/apple-icon-152x152.png>
+<link rel=apple-touch-icon sizes=180x180 href=/images/apple-icon-180x180.png>
+<link rel=icon type=image/png sizes=192x192 href=/images/android-icon-192x192.png>
+<link rel=icon type=image/png sizes=32x32 href=/images/favicon-32x32.png>
+<link rel=icon type=image/png sizes=96x96 href=/images/favicon-96x96.png>
+<link rel=icon type=image/png sizes=16x16 href=/images/favicon-16x16.png>
+<link rel=manifest href=/images/manifest.json>
+<meta name=msapplication-TileColor content="#ffffff">
+<meta name=msapplication-TileImage content="/ms-icon-144x144.png">
+<meta name=theme-color content="#ffffff">
+<link rel=stylesheet type=text/css href=css/fonts/nitti.css>
+<link rel=stylesheet type=text/css href=css/fonts/ibmplexmono.css>
+<link rel=stylesheet type=text/css href=css/fonts/ibmplexsans.css>
+<link rel=stylesheet href=graphic/public/global.css>
+<link rel=stylesheet href=graphic/public/build/bundle.css>
+<link rel=stylesheet type=text/css href=css/style.css>
+<style type=text/css>.no-fouc{display:none}</style>
+<script defer src=graphic/public/build/bundle.js></script>
+<script defer type=text/javascript>document.documentElement.className='no-fouc'</script>
+</head><body class=landing><header><div class=header-wrapper><div class=inner-wrapper>
+<nav id=navBar class="no-js nav-bar">
+<a class=nav-logo href=/>
+<img class=logo src=/images/logo.svg width=200px height=100px></a>
+<div class=nav-right>
+<div class=nav-links>
+<ul>
+<li><a href=/docs/upload>Upload Data</a></li>
+<li><a href=/docs/contribute>Contibute Space</a></li>
+</ul>
+</div>
+</div>
+<div id=nav-toggle class=burgermenu href=#>☰</div>
+<div id=overlay></div>
+<div id=burgernav>
+<ul>
+<li><a href=/docs/upload>Upload Data</a></li>
+<li><a href=/docs/contribute>Contibute Space</a></li>
+</ul>
+</div>
+</nav>
+<script>window.onload=()=>{let a=50,b=50;console.log(new window.LoadVis({target:document.querySelector("#graphicHolder"),props:{used:a,total:b}}))}</script>
+</div></div></header><div id=content>
+</div></div></header>
+<div class=wrapper>
+<section class=light>
+<div class=section-wrapper>
+<div class=columns>
+<div>
+<h3>Meet Arken, A Distributed Digital Archive Built for the World's Open Source and Scientific Data.</h3>
+</div>
+<div>
+<div id=graphicHolder></div>
+<br>
+<ul id=guide>
+<li><b>Used Space:</b> 50 TB</li>
+<li><b>Total Space:</b> 50 TB</li>
+<li><b>Active Nodes:</b> 500</li>
+<hr>
+<li><b>Gitub:</b> <a href=https://github.com/arkenproject/arken>arkenproject/arken</a></li>
+<hr>
+<li><b>Dockerhub:</b> <a href=https://hub.docker.com/r/arkenproject/arken>arkenproject/arken</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id=about class=default>
+<div class=section-wrapper>
+<div class=columns>
+<div>
+<h2>A bit of Backstory</h2>
+<p> Many researchers, museums, and archivists are struggling to host and
 protect a vast amount of important public data. Although the price of
 high capacicity hard drives has decreased significantly in recent years,
 most open-source and scientific organizations don't have the ability to
@@ -8,26 +90,64 @@ build and maintain their own hosting infastructure. As such many groups
 get trapped relying on expensive cloud storage providers. For continuously well
 funded projects, cloud storage is an excepted line item, but for smaller projects
 with limited term grants, once the grant money runs out often times researchers are
-forced to move their data to offline external hard drives.<br>Moreover many museums simply can't afford to take the steps to digitize their collections
-because of the lasting monthly expenses cloud storage would require.<br>After working with a number of these grant supported projects and watching them fail to find
-a sustainable storage solution, we decided to build Arken.</p><h2>What is Arken?</h2><h3>A Non-Technical Version</h3><p>Arken is a storage system built to lower the bar needed to sustainably and affordably
+forced to move their data to offline external hard drives.
+<br>
+Moreover many museums simply can't afford to take the steps to digitize their collections
+because of the lasting monthly expenses cloud storage would require.
+<br>
+After working with a number of these grant supported projects and watching them fail to find
+a sustainable storage solution, we decided to build Arken.
+</p>
+<h2>What is Arken?</h2>
+<h3>A Non-Technical Version</h3>
+<p>
+Arken is a storage system built to lower the bar needed to sustainably and affordably
 host and back up publicly accessible data. Instead of needing a powerful enterprise server
 Arken can run on almost anything--including a $35 dollar Raspberry Pi.
 Utilizing IPFS (the Inter-Planetary Filesystem) Arken also makes content publicly accessible
 without requiring organizations to register a static ip address or learn to port forward and setup
-a web server on your own.<br>Truly backing up any piece of data means having multiple copies. (Optimally even in geographically different regions.)
+a web server on your own.
+<br>
+Truly backing up any piece of data means having multiple copies. (Optimally even in geographically different regions.)
 Although anyone can setup their own Arken Cluster--and we encorage you to do so if you're interested/have the means--we'd
 also like to encorage you to think about joining the Core Arken Cluster. The Core Arken Cluster is the official data repository maintained by
 the Arken Project, dedicated to preserving open source and scientific data. Besides being an Archival System, Arken is also a community
 of researchers, organizations, and individuals contributing storage space to the core cluster. As a member of the Core Cluster
 organizations agree to host a subset of eachothers data. By creating a geographically distributed backup, your data will never be lost
-in the case that any single node fails or looses connection.</p></div><div><p>If you are an individual or organization without the ability to host your own system, you may apply for an allocation to the Core
+in the case that any single node fails or looses connection.
+</p>
+</div>
+<div>
+<p>
+If you are an individual or organization without the ability to host your own system, you may apply for an allocation to the Core
 Arken Cluster by submitting your files as an application. The Arken Project typically gives allocations to researchers in need
 who's data is at risk of being lost and who's data will benefit the public by being openly accessible. If you believe your data falls
 into this category please submit your application to the <a href=https://github.com/arkenproject/core-keyset><b>core-keyset</b></a> using
-the <a href=https://github.com/arkenproject/ait><b>Arken import tool</b></a>.</p><h3>A Technical Version</h3><p>Arken is a management engine that runs on top of the IPFS (Interplanetary File System) protocol. Each instance of Arken
+the <a href=https://github.com/arkenproject/ait><b>Arken import tool</b></a>.
+</p>
+<h3>A Technical Version</h3>
+<p>Arken is a management engine that runs on top of the IPFS (Interplanetary File System) protocol. Each instance of Arken
 calculates which important files are hosted by the fewest number of other nodes on the network and should thus be
 locally backed up to reduce the risk of data loss. Arken also knows how much space it's using on your system and will
-respect limits you set by locally deleting data that is backed up more than a specified number times across the cluster.</p><h2>Interested in Uploading Data to the Core Arken Cluster?</h2><p>If you are a researcher, collections curator, or open source publisher check out our guide on using the Arken Import Tool
-to submit & upload your data to the Core Arken Cluster <a href=/docs/upload><b>here</b></a>.</p><br><br><h2>Want to explore the data already stored in the Core Arken Cluster?</h2><p>Checkout the <a href=https://github.com/arkenproject/core-keyset><b>Core Keyset</b></a>, open up a keyset file to explore the File IDs contained within.
-To view the file in your browser or download it you can then paste the link to the Arken to Web Link like so.</p><pre class=highlight><code>https://link.arken.io/ipfs/REPLACE-ME-WITH-FILE-ID</code></pre></p></div></div></div></section></div></div><script defer src=/js/nav.js></script><script>window.addEventListener("load",function(e){document.documentElement.className='';});</script></body></html>
+respect limits you set by locally deleting data that is backed up more than a specified number times across the cluster.
+</p>
+<h2>Interested in Uploading Data to the Core Arken Cluster?</h2>
+<p>If you are a researcher, collections curator, or open source publisher check out our guide on using the Arken Import Tool
+to submit & upload your data to the Core Arken Cluster <a href=/docs/upload><b>here</b></a>.</p>
+<br>
+<br>
+<h2>Want to explore the data already stored in the Core Arken Cluster?</h2>
+<p>
+Checkout the <a href=https://github.com/arkenproject/core-keyset><b>Core Keyset</b></a>, open up a keyset file to explore the File IDs contained within.
+To view the file in your browser or download it you can then paste the link to the Arken to Web Link like so.</p>
+<pre class=highlight><code>https://link.arken.io/ipfs/REPLACE-ME-WITH-FILE-ID</code></pre>
+</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div><script defer src=/js/nav.js></script>
+<script>window.addEventListener("load",function(a){document.documentElement.className=''})</script>
+</body>
+</html>
