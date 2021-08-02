@@ -22,7 +22,7 @@
         `translate(${dims.margins + dims.width / 2},${dims.margins +
           dims.height / 2})`
       );
-    let pie = d3.pie()([used, total]);
+    let pie = d3.pie()([used, total - used]);
     console.log(pie);
     let arcgen = d3
       .arc()
