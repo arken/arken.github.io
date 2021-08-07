@@ -1,5 +1,30 @@
 {{ define "main" }}
 </div></div></header>
+<script>
+  // set the values here and use them in the graphic.
+  window.onload = () => {
+    fetch('https://data.arken.io/usage')
+      .then((response) => {
+        return response.json()
+      })
+      .then((data) => {
+        let used = data.space_used;
+        let total = data.space_total;
+
+        document.getElementById("used").innerHTML = used;
+        document.getElementById("total").innerHTML = total;
+        document.getElementById("nodes").innerHTML = data.nodes_online;
+        console.log(new window.LoadVis({
+          target: document.querySelector("#graphicHolder"),
+          props: {
+            used
+            ,
+            total
+          }
+        }))
+      })
+  }
+</script>
 <div class="wrapper">
 
   <section class="light">
@@ -12,11 +37,11 @@
           <div id="graphicHolder"></div>
           <br>
           <ul id='guide'>
-            <li><b>Used Space:</b> 50 TB</li>
-            <li><b>Total Space:</b> 50 TB</li>
-            <li><b>Active Nodes:</b> 500</li>
+            <li><b>Used Space:</b> <span id="used"></span>TB</li>
+            <li><b>Total Space:</b> <span id="total"></span>TB</li>
+            <li><b>Active Nodes:</b> <span id="nodes"></span></li>
             <hr />
-            <li><b>Gitub:</b> <a href="https://github.com/arkenproject/arken">arkenproject/arken</a></li>
+            <li><b>Gitub:</b> <a href="https://github.com/arken/arken">arken/arken</a></li>
             <hr />
             <li><b>Dockerhub:</b> <a href='https://hub.docker.com/r/arkenproject/arken'>arkenproject/arken</a></li>
           </ul>
