@@ -10,8 +10,8 @@
       margins: 20
     };
     // chop off useless sig figs
-    used = parseFloat(used.toFixed(1))
-    total = parseFloat(total.toFixed(1))
+    used = parseFloat(used.toFixed(2))
+    total = parseFloat(total.toFixed(2))
     let svg = d3.select(svgElement);
     svg.attr("height", dims.height);
     svg.attr("width", dims.width);
@@ -22,7 +22,7 @@
         `translate(${dims.margins + dims.width / 2},${dims.margins +
           dims.height / 2})`
       );
-    let pie = d3.pie()([used, (total - used).toFixed(1)]);
+    let pie = d3.pie()([used, (total - used).toFixed(2)]);
     console.log(pie);
     let arcgen = d3
       .arc()
