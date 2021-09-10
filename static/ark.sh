@@ -37,5 +37,5 @@ else
         echo
         echo "  export PATH=\"\$HOME/.ark/bin:\$PATH\""
         echo
-        echo "Run '$exe/ --help' to get started"
+        echo "Run '$exe --help' to get started"
 fi
