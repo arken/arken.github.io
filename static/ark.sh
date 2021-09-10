@@ -18,12 +18,12 @@ if [ "$arch" = "x86_64" ]; then
         arch="amd64"
 fi
 
-exe=$HOME/.ark/bin
+exe=$HOME/.ark/bin/ark
 
-mkdir -p $exe
+mkdir -p $HOME/.ark/bin
 
-curl --fail --location --progress-bar --output $exe/ark https://github.com/arken/ark/releases/download/$latest/ark-$latest-$os-$arch
-chmod a+x $exe/ark
+curl --fail --location --progress-bar --output $exe https://github.com/arken/ark/releases/download/$latest/ark-$latest-$os-$arch
+chmod a+x $exe
 
 echo "Ark was installed successfully to $exe"
 if command -v ark >/dev/null; then
@@ -31,11 +31,11 @@ if command -v ark >/dev/null; then
 else
         case $SHELL in
         /bin/zsh) shell_profile=".zshrc" ;;
-        *) shell_profile=".bash_profile" ;;
+        *) shell_profile=".bashrc" ;;
         esac
         echo "Manually add the directory to your \$HOME/$shell_profile (or similar)"
         echo
         echo "  export PATH=\"\$HOME/.ark/bin:\$PATH\""
         echo
-        echo "Run '$exe --help' to get started"
+        echo "Run '$exe/ --help' to get started"
 fi
